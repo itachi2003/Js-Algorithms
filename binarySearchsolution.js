@@ -10,16 +10,11 @@ function binarySearch(arr, target) {
     if(target < arr[middleIndex]){
       rightIndex = middleIndex - 1
     } else {
-      rightIndex = middleIndex + 1
+      leftIndex = middleIndex + 1
     }
   }
   return -1
 }
-
-
-
-
-
 
 
 console.log(binarySearch([-5, 2, 4, 6, 10], 10))
